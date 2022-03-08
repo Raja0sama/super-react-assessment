@@ -11,7 +11,6 @@ interface HomeProps {}
 //
 const Home: FC<HomeProps> = () => {
   const movies = useSelector((state: any) => state.app.movies);
-  console.log({ movies });
 
   return (
     <Layout>
@@ -20,7 +19,7 @@ const Home: FC<HomeProps> = () => {
       >
         <div className="text-center mb-10">
           <h1 className="text-5xl mb-5">
-            <p>Welcome to Super Movie</p>
+            <p>Hello Mom == Hello World</p>
           </h1>
 
           <p>
@@ -42,6 +41,7 @@ const Home: FC<HomeProps> = () => {
             }).format(d);
             return (
               <Box
+                key={e.original_title}
                 link={`/movie/${e.id}`}
                 rating={e.vote_average}
                 title={e.original_title}

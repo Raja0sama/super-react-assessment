@@ -8,7 +8,7 @@ interface LoginProps {}
 
 const Login: FC<LoginProps> = () => {
   const count = useSelector((state: any) => state.app);
-  console.log(count);
+
   const { app } = actions;
   const { app: _app } = effects;
   const dispatch = useDispatch();

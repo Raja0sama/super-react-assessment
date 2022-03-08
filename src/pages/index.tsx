@@ -11,7 +11,7 @@ import routes from "../config/routes";
 interface PagesTypes {}
 
 const Pages: FC<PagesTypes> = () => (
-  <Router basename="/super-react-assessment/">
+  <Router basename="">
     <Routes>
       {routes.PUBLIC.map((route) => {
         const Component = route.component;
