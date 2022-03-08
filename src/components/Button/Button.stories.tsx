@@ -15,13 +15,6 @@ export default {
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-// export const Primary: ComponentStory<typeof Button> = () => (
-//   <Button type="primary">Button</Button>
-// );
-// export const Secondary: ComponentStory<typeof Button> = () => (
-//   <Button type="secondary">Button</Button>
-// );
-
 //👇 We create a “template” of how args map to rendering
 const Template = (args: any) => <Button {...args}>Button</Button>;
 

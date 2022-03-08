@@ -1,3 +1,7 @@
+##
+
+The scaffold used in this app is named super react, An open-source project i am working on. Beside that the app overall
+
 ## Super React
 
 A Perfect boiler plate for mega react js projects that contains the following
