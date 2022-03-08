@@ -1,0 +1,44 @@
+{
+  "usesTypeScript": true,
+  "usesCssModule": true,
+  "cssPreprocessor": "scss",
+  "testLibrary": "Testing Library",
+  "component": {
+    "default": {
+      "path": "src/components",
+      "withLazy": false,
+      "withStory": true,
+      "withStyle": true,
+      "withTest": true
+    },
+
+    "public-page": {
+      "path": "src/pages/public",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": true
+    },
+    "pre-auth-page": {
+      "path": "src/pages/pre_authenticated",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": true
+    },
+    "post-auth-page": {
+      "path": "src/pages/authenticated",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": true
+    },
+    "layout": {
+      "path": "src/layout",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": true
+    }
+  }
+}
