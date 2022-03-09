@@ -11,7 +11,6 @@ interface HomeProps {}
 //
 const Home: FC<HomeProps> = () => {
   const movies = useSelector((state: any) => state.app.movies);
-
   return (
     <Layout>
       <div

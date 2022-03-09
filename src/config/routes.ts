@@ -14,6 +14,11 @@
 
 import { lazy } from "react";
 
+export interface ROUTE_TYPE {
+  component: any;
+  path: string;
+}
+
 export default {
   PUBLIC: [
     {
@@ -26,17 +31,11 @@ export default {
         () => import("../pages/public/MovieDetails/MovieDetails")
       ),
     },
-  ],
-  AUTHENTICATED: [
     {
-      path: "/home",
-      component: lazy(() => import("../pages/authenticated/Home/Home")),
+      path: "*",
+      component: lazy(() => import("../pages/public/NotFound/NotFound")),
     },
   ],
-  PRE_AUTHENTICATED: [
-    {
-      path: "/login",
-      component: lazy(() => import("../pages/pre_authenticated/Login/Login")),
-    },
-  ],
+  AUTHENTICATED: [],
+  PRE_AUTHENTICATED: [],
 };

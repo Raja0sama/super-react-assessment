@@ -17,20 +17,20 @@ export default {
   },
   effects: {
     movieById(_: any, { dispatch }: any) {
-      movieDetail(_.id).then((e) => {
+      movieDetail(_.id).then((e: any) => {
         _.onSuccess(e.data);
       });
     },
     searchMovies(_: any, { dispatch }: any) {
-      searchMovies(_.search).then((e) => {
+      searchMovies(_.search).then((e: any) => {
         _.onSuccess(e.data);
       });
     },
   },
   subscriptions: {
     fetchingMovies: ({ dispatch }: any) => {
-      getMovies().then((e) => {
-        dispatch(actions.app.setState({ movies: e.data }));
+      getMovies().then((e: any) => {
+        dispatch(actions.app.setState({ movies: e?.data }));
       });
     },
     SayingHello: ({ dispatch }: any) => {

@@ -1,9 +1,9 @@
 // Button.stories.ts|tsx
 import "../../assets/style.css";
 
+import Box, { BoxProps } from "./Box";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import Box from "./Box";
 import React from "react";
 
 export default {
@@ -12,7 +12,7 @@ export default {
 } as ComponentMeta<typeof Box>;
 
 //👇 We create a “template” of how args map to rendering
-const Template = (args: any) => (
+const Template = (args: BoxProps) => (
   <div style={{ maxWidth: 400 }} className={"text-white"}>
     <Box
       sandbox

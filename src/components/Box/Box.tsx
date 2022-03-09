@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Box.module.scss";
 
-interface BoxProps {
+export interface BoxProps {
   children?: React.ReactNode;
   title?: string;
   date?: string;

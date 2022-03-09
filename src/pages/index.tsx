@@ -2,19 +2,19 @@
  * This page contain routes for the application itself. The routes are coming from config/routes.js folders and are being used here.
  */
 
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import React, { FC } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import routes, { ROUTE_TYPE } from "../config/routes";
 
 import SecureLayout from "../layout/SecureLayout/SecureLayout";
-import routes from "../config/routes";
 
 interface PagesTypes {}
 
 const Pages: FC<PagesTypes> = () => (
-  <Router basename="/super-react-assessment/">
+  <Router basename={false ? "" : "/super-react-assessment/"}>
     <Routes>
-      {routes.PUBLIC.map((route) => {
-        const Component = route.component;
+      {routes.PUBLIC.map((route: ROUTE_TYPE) => {
+        const Component = route?.component;
         return (
           <Route
             key={route.path}
@@ -29,8 +29,8 @@ const Pages: FC<PagesTypes> = () => (
       })}
     </Routes>
     <Routes>
-      {routes.AUTHENTICATED.map((route) => {
-        const Component = route.component;
+      {routes.AUTHENTICATED.map((route: ROUTE_TYPE) => {
+        const Component = route?.component;
         return (
           <Route
             key={route.path}
@@ -47,8 +47,8 @@ const Pages: FC<PagesTypes> = () => (
       })}
     </Routes>
     <Routes>
-      {routes.PRE_AUTHENTICATED.map((route) => {
-        const Component = route.component;
+      {routes.PRE_AUTHENTICATED.map((route: ROUTE_TYPE) => {
+        const Component = route?.component;
         return (
           <Route
             key={route.path}
