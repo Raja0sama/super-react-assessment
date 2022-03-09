@@ -36,7 +36,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -b page -d build"
   },
   "eslintConfig": {
     "extends": [

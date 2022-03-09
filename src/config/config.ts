@@ -3,4 +3,5 @@ export default {
     LoggedOut: "/login",
     LoggedIn: "/",
   },
+  graphQLDataAdapter: true,
 };

@@ -1,7 +1,13 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 import axios from "axios";
+import config from "../config/config";
 
+const { graphQLDataAdapter } = config;
+
+/**
+ * Apollo Client
+ */
 export const apolloClient = new ApolloClient({
   uri: "https://super-nset.herokuapp.com/graphql",
   cache: new InMemoryCache(),
@@ -9,6 +15,10 @@ export const apolloClient = new ApolloClient({
 
 const URL = "https://super-nset.herokuapp.com/movies/";
 
+/**
+ * A Wrapper that returns Rest Methods
+ * @returns Rest Methods
+ */
 const getRestMethods = () => {
   console.log("🔥 Using Rest Methods");
   const getMovies = () => axios.get(`${URL}`);
@@ -22,6 +32,10 @@ const getRestMethods = () => {
     movieDetail,
   };
 };
+
+/*
+ *  GraphQL Methods
+ */
 const getGraphQLMethods = () => {
   console.log("💧 Using GraphQL Methods");
   const getMovies = () => {
@@ -57,12 +71,16 @@ const getGraphQLMethods = () => {
   };
 };
 
-const useGraph = false;
+const useGraph = graphQLDataAdapter;
 const { getMovies, searchMovies, movieDetail } = useGraph
   ? getGraphQLMethods()
   : getRestMethods();
 
 export { getMovies, searchMovies, movieDetail };
+
+/**
+ * Below are GraphQL queries
+ */
 
 const DISCOVER_MOVIES = gql`
   {
