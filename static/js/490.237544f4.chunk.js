@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksuper_react=self.webpackChunksuper_react||[]).push([[490],{4490:function(t,e,n){n.r(e),n.d(e,{default:function(){return o}});n(2791);var u={},r=n(184),o=function(){return(0,r.jsx)("div",{className:u.NotFound,"data-testid":"NotFound",children:"NotFound Component"})}}}]);
+//# sourceMappingURL=490.237544f4.chunk.js.map

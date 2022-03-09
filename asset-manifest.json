@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/super-react-assessment/static/css/main.cffac05c.css",
+    "main.js": "/super-react-assessment/static/js/main.11b1e3fd.js",
+    "static/css/123.941fe7e9.chunk.css": "/super-react-assessment/static/css/123.941fe7e9.chunk.css",
+    "static/js/123.211f584a.chunk.js": "/super-react-assessment/static/js/123.211f584a.chunk.js",
+    "static/js/312.2c4fabb4.chunk.js": "/super-react-assessment/static/js/312.2c4fabb4.chunk.js",
+    "static/css/490.31d6cfe0.chunk.css": "/super-react-assessment/static/css/490.31d6cfe0.chunk.css",
+    "static/js/490.237544f4.chunk.js": "/super-react-assessment/static/js/490.237544f4.chunk.js",
+    "index.html": "/super-react-assessment/index.html",
+    "main.cffac05c.css.map": "/super-react-assessment/static/css/main.cffac05c.css.map",
+    "main.11b1e3fd.js.map": "/super-react-assessment/static/js/main.11b1e3fd.js.map",
+    "123.941fe7e9.chunk.css.map": "/super-react-assessment/static/css/123.941fe7e9.chunk.css.map",
+    "123.211f584a.chunk.js.map": "/super-react-assessment/static/js/123.211f584a.chunk.js.map",
+    "312.2c4fabb4.chunk.js.map": "/super-react-assessment/static/js/312.2c4fabb4.chunk.js.map",
+    "490.237544f4.chunk.js.map": "/super-react-assessment/static/js/490.237544f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cffac05c.css",
+    "static/js/main.11b1e3fd.js"
+  ]
+}
