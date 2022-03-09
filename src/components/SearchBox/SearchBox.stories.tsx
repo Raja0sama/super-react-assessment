@@ -1,12 +1,17 @@
+import SearchBox from "./SearchBox";
 /* eslint-disable */
-import SearchBox from './SearchBox';
+import StoriesWrapper from "../../utils/stories.wrapper";
 
 export default {
   title: "SearchBox",
 };
 
-export const Default = () => <SearchBox />;
+export const Default = () => (
+  <StoriesWrapper>
+    <SearchBox />
+  </StoriesWrapper>
+);
 
 Default.story = {
-  name: 'default',
+  name: "default",
 };

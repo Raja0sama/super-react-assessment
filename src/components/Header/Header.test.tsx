@@ -1,13 +1,15 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import Header from './Header';
+import "@testing-library/jest-dom/extend-expect";
 
-describe('<Header />', () => {
-  test('it should mount', () => {
+import { render, screen } from "@testing-library/react";
+
+import Header from "./Header";
+import React from "react";
+
+describe("<Header />", () => {
+  test("it should mount", () => {
     render(<Header />);
-    
-    const header = screen.getByTestId('Header');
+
+    const header = screen.getByTestId("Header");
 
     expect(header).toBeInTheDocument();
   });
